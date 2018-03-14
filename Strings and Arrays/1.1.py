@@ -11,8 +11,8 @@ We must at least visit once each element of the string
 '''
 
 true_smallExample = "abcd"
-true_bigExample = "abcdefghijklmnopqrstuvwxyz&é(§è!çà)-$*`£<>@#"
 false_smallExample = "aabc"
+true_bigExample = "abcdefghijklmnopqrstuvwxyz&é(§è!çà)-$*`£<>@#"
 false_bigExample = "abzsamdriuopshtvnmwdisééaçex)$`:`:)-<<@d,zcm"
 
 '''
@@ -31,10 +31,10 @@ def isUnique1(inputString):
                 return False
     return True
 
-print("Test 1 - Small example (Expected True) :", isUnique1(true_smallExample))
-print("Test 2 - Small example (Expected False) :", isUnique1(false_smallExample))
-print("Test 3 - Big example (Expected True) :", isUnique1(true_bigExample))
-print("Test 4 - Big example (Expected False) :", isUnique1(false_bigExample))
+print("Test 1 - Small example (Expected True) : {}".format(isUnique1(true_smallExample)))
+print("Test 2 - Small example (Expected False) : {}".format(isUnique1(false_smallExample)))
+print("Test 3 - Big example (Expected True) : {}".format(isUnique1(true_bigExample)))
+print("Test 4 - Big example (Expected False) : {}".format(isUnique1(false_bigExample)))
 
 '''
 Solution 2 - Using a hash set
@@ -55,10 +55,10 @@ def isUnique2(inputString):
         hashSet.add(char)
     return True
 
-print("Test 1 - Small example (Expected True) :", isUnique2(true_smallExample))
-print("Test 2 - Small example (Expected False) :", isUnique2(false_smallExample))
-print("Test 3 - Big example (Expected True) :", isUnique2(true_bigExample))
-print("Test 4 - Big example (Expected False) :", isUnique2(false_bigExample))
+print("Test 1 - Small example (Expected True) : {}".format(isUnique2(true_smallExample)))
+print("Test 2 - Small example (Expected False) : {}".format(isUnique2(false_smallExample)))
+print("Test 3 - Big example (Expected True) : {}".format(isUnique2(true_bigExample)))
+print("Test 4 - Big example (Expected False) : {}".format(isUnique2(false_bigExample)))
 
 '''
 Solution 3 - Without data structure
@@ -78,7 +78,7 @@ def isUnique3(inputString):
             return False
     return True
 
-print("Test 1 - Small example (Expected True) :", isUnique3(true_smallExample))
-print("Test 2 - Small example (Expected False) :", isUnique3(false_smallExample))
-print("Test 3 - Big example (Expected True) :", isUnique3(true_bigExample))
-print("Test 4 - Big example (Expected False) :", isUnique3(false_bigExample))
+print("Test 1 - Small example (Expected True) : {}".format(isUnique3(true_smallExample)))
+print("Test 2 - Small example (Expected False) : {}".format(isUnique3(false_smallExample)))
+print("Test 3 - Big example (Expected True) : {}".format(isUnique3(true_bigExample)))
+print("Test 4 - Big example (Expected False) : {}".format(isUnique3(false_bigExample)))
