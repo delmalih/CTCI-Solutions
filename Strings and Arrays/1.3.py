@@ -45,6 +45,7 @@ We create an array containing the characters of the new string and concat this a
 Complexity: O(n)
 '''
 
+print("")
 print("SOLUTION 2 - Counting Spaces - O(n)")
 
 def URLify2(string, length):
